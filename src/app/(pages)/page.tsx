@@ -1,13 +1,13 @@
-import Link from "next/link";
 import Banner from "./components/Home/Banner";
+import Feature from "./components/Home/Feature";
+import HowItWorks from "./components/Home/HowItWorks";
 
 export default function Home() {
   return (
     <div className="">
       <Banner />
-      <Link href="/registration" className="">
-        <span className="relative z-10">Registration</span>
-      </Link>
+      <Feature />
+      <HowItWorks />
     </div>
   );
 }

@@ -4,6 +4,8 @@ import { useRouter } from "next/navigation";
 import React from "react";
 import { useAppDispatch } from "../../../redux/hooks";
 import { logout } from "../../../redux/features/auth/authSlice";
+import Header from "./components/Header";
+import CourseCreate from "./components/CourseCreate";
 
 export default function Dashboard() {
   const dispatch = useAppDispatch();
@@ -14,7 +16,9 @@ export default function Dashboard() {
     router.push("/login");
   };
   return (
-    <div className="p-5">
+    <div className="">
+      <Header />
+      <CourseCreate />
       <h1 className="text-2xl font-bold">Dashboard</h1>
       <p>Welcome to your SnapMind dashboard 🚀</p>
       <button

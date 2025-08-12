@@ -46,7 +46,7 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="text-2xl p-2"
+              className="text-2xl p-2 cursor-pointer"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >

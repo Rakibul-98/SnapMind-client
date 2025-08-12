@@ -18,7 +18,7 @@ export default function CommonLayout({
       `,
         }}
       />
-      <div className="text-white relative w-[95%] mx-auto">
+      <div className="text-white relative w-[90%] mx-auto">
         <Navbar />
         {children}
       </div>
