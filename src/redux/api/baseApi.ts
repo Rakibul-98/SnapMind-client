@@ -5,7 +5,7 @@ export const baseApi = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl:
       process.env.NEXT_PUBLIC_API_URL ||
-      "https://snapmind-server.vercel.app/api",
+      "https://snapmind-server.vercel.app/api/v1",
   }),
   endpoints: () => ({}),
 });

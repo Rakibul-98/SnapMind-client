@@ -1,18 +1,31 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useForm } from "react-hook-form";
 import { RegisterFormValues } from "../../../types";
 import Link from "next/link";
+import { useRegisterMutation } from "../../../redux/features/auth/authApi";
+import toast from "react-hot-toast";
 
 export default function Registration() {
   const {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<RegisterFormValues>();
 
-  const onSubmit = (data: RegisterFormValues) => {
-    console.log(data);
+  const [registerUser, { isLoading }] = useRegisterMutation();
+
+  const onSubmit = async (data: RegisterFormValues) => {
+    try {
+      const res = await registerUser(data).unwrap();
+      toast.success("Registration successful:", res);
+      reset();
+    } catch (err: any) {
+      console.error("❌ Registration failed:", err);
+      toast.error(err?.data?.message || "Registration failed");
+    }
   };
 
   return (
@@ -55,7 +68,7 @@ export default function Registration() {
             className="w-full outline-0 focus:outline-0 bg-gray-50/10 p-2"
             type="submit"
           >
-            Register
+            {isLoading ? "Registering..." : "Register"}
           </button>
           <p className="text-sm text-center">
             Already registered?{" "}
