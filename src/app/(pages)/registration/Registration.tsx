@@ -65,7 +65,7 @@ export default function Registration() {
           />
 
           <button
-            className="w-full outline-0 focus:outline-0 bg-gray-50/10 p-2"
+            className="w-full outline-0 focus:outline-0 bg-gray-50/10 p-2 cursor-pointer"
             type="submit"
           >
             {isLoading ? "Registering..." : "Register"}
