@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Banner from "./components/Banner";
+import Banner from "./components/Home/Banner";
 
 export default function Home() {
   return (

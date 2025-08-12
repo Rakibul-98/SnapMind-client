@@ -1,3 +1,5 @@
+import Navbar from "./components/Shared/Navbar";
+
 export default function CommonLayout({
   children,
 }: {
@@ -16,7 +18,10 @@ export default function CommonLayout({
       `,
         }}
       />
-      <div className="text-white relative">{children}</div>
+      <div className="text-white relative w-[95%] mx-auto">
+        <Navbar />
+        {children}
+      </div>
     </div>
   );
 }
