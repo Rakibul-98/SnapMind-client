@@ -59,7 +59,7 @@ export default function Categories() {
         {categories.map((category, index) => (
           <div key={index} className="bg-gray-50/10">
             <Image
-              className="w-full grayscale-75"
+              className="w-full grayscale-50"
               src={category.img}
               alt={category.title}
             />
