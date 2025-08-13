@@ -9,18 +9,21 @@ export default function Feature() {
   const features = [
     {
       icon: <BiBook />,
-      title: "Pioneer education",
-      description: "",
+      title: "AI-Powered Learning",
+      description:
+        "Experience personalized education where every course is generated and updated by AI to match your goals and skill level.",
     },
     {
       icon: <IoAttach />,
-      title: "cultivating engagement",
-      description: "",
+      title: "Engaging Learning Experience",
+      description:
+        "Stay motivated through gamified quizzes, points, and leaderboards designed to make learning fun and interactive.",
     },
     {
       icon: <ImConnection />,
-      title: "building connections",
-      description: "",
+      title: "Global Learner Network",
+      description:
+        "Connect with a vibrant community of learners, share knowledge, and grow together through discussions and collaboration.",
     },
   ];
 
@@ -36,27 +39,25 @@ export default function Feature() {
           schedule.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-5 my-10">
-        <div>
+      <div className="grid md:grid-cols-2 gap-5 my-10 items-stretch">
+        <div className="hidden md:block">
           <Image
-            className="w-full h-[65vh] object-cover rounded-2xl"
+            className="w-full h-full object-cover rounded-2xl"
             src={featureImg}
             alt="feature image"
           />
         </div>
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between gap-3 h-full">
           {features.map((feature, i) => (
             <div
-              className="bg-gray-50/5 py-3 px-2 text-center shadow-2xl rounded-2xl"
+              className="bg-gray-50/5 px-5 py-3 shadow-2xl rounded-2xl"
               key={i}
             >
               <p className="text-3xl">{feature.icon}</p>
-              <h3 className="my-2 capitalize text-base">{feature.title}</h3>
-              {/* <p>{p.desc}</p> */}
-              <p className="text-sm">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
-                explicabo?
-              </p>
+              <h3 className="my-2 capitalize text-lg font-semibold">
+                {feature.title}
+              </h3>
+              <p className="text-sm">{feature.description}</p>
             </div>
           ))}
         </div>
