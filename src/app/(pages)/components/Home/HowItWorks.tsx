@@ -31,7 +31,7 @@ export default function HowItWorks() {
   return (
     <div className="py-5">
       <h3 className="capitalize text-center text-2xl font-semibold">
-        How this works
+        How it works
       </h3>
       <div className="py-5 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-3 items-center">
         {process.map((p, i) => (

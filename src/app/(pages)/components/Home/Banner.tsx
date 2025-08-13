@@ -14,9 +14,11 @@ export default function Banner() {
             <span className="text-purple-700">...</span>
           </h2>
           <p className="my-5">
-            Whether you&apos;re mastering a new skill or deepening your
-            expertise, <br className="hidden sm:block" /> we make learning
-            engaging, efficient, and tailored just for you.
+            SnapMind creates personalized courses, pulls the best resources from
+            across the web, and adapts to how you learn.Whether you&apos;re
+            mastering a new skill or deepening your expertise,{" "}
+            <br className="hidden sm:block" /> we make learning engaging,
+            efficient, and tailored just for you.
           </p>
           <div className="flex items-center space-x-3">
             <Link

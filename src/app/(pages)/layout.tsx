@@ -1,3 +1,4 @@
+import Footer from "./components/Shared/Footer";
 import Navbar from "./components/Shared/Navbar";
 
 export default function CommonLayout({
@@ -21,6 +22,7 @@ export default function CommonLayout({
       <div className="text-white relative w-[90%] mx-auto">
         <Navbar />
         {children}
+        <Footer />
       </div>
     </div>
   );
