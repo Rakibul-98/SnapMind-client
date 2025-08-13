@@ -17,8 +17,8 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="">
-      <div className="">
+    <nav className="sticky top-0 z-50 bg-gradient-to-r from-[#132B36] via-[#2F2D40] to-[#1F1119]">
+      <div className="w-[90%] mx-auto">
         <div className="flex justify-between h-16">
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="flex items-center">
@@ -58,13 +58,13 @@ export default function Navbar() {
       </div>
 
       {isOpen && (
-        <div className="md:hidden" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden w-[92%]" id="mobile-menu">
+          <div className="pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className=" block text-base font-medium"
+                className=" block text-base font-medium text-right"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}

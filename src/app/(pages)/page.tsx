@@ -1,4 +1,5 @@
 import Banner from "./components/Home/Banner";
+import Categories from "./components/Home/Categories";
 import CTA from "./components/Home/CTA";
 import FAQ from "./components/Home/FAQ";
 import Feature from "./components/Home/Feature";
@@ -9,6 +10,7 @@ export default function Home() {
     <div className="">
       <Banner />
       <Feature />
+      <Categories />
       <HowItWorks />
       <FAQ />
       <CTA />
