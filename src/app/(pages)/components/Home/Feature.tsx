@@ -28,7 +28,7 @@ export default function Feature() {
   ];
 
   return (
-    <div className="my-10">
+    <div className="mb-10">
       <div className="text-center">
         <h2 className="capitalize text-4xl font-semibold leading-10 ">
           seamless learning, <br /> anywhere, anytime

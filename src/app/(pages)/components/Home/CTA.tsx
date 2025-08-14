@@ -20,7 +20,7 @@ export default function CTA() {
   };
 
   return (
-    <section className="py-10">
+    <section className="pb-10">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
           <Image src={newsletter} alt="Newsletter" className="" />
