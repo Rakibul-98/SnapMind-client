@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import DashboardMenu from "./components/DashboardMenu";
 import { useAppDispatch } from "../../redux/hooks";
 import { logout } from "../../redux/features/auth/authSlice";
+import Courses from "./components/Courses";
 
 export default function Dashboard() {
   const dispatch = useAppDispatch();
@@ -40,6 +41,7 @@ export default function Dashboard() {
 
         <div className="py-5">
           <Header />
+          <Courses />
         </div>
 
         <div
