@@ -1,11 +1,8 @@
-import Footer from "./components/Shared/Footer";
-import Navbar from "./components/Shared/Navbar";
+import React from "react";
+import Dashboard from "./Dashboard";
+import ProtectedRoute from "../../protectedRoute/ProtectedRoute";
 
-export default function CommonLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function DashboardPage() {
   return (
     <div className="min-h-screen w-full bg-[#0a0a0a] relative">
       <div
@@ -19,11 +16,9 @@ export default function CommonLayout({
       `,
         }}
       />
-      <div className="text-white relative ">
-        <Navbar />
-        <div className="w-[90%] mx-auto min-h-screen">{children}</div>
-        <Footer />
-      </div>
+      <ProtectedRoute>
+        <Dashboard />
+      </ProtectedRoute>
     </div>
   );
 }
