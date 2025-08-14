@@ -23,11 +23,7 @@ export default function CTA() {
     <section className="py-10">
       <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
-          <Image
-            src={newsletter}
-            alt="Newsletter"
-            className="lg:w-[70%] mx-auto md:mx-0"
-          />
+          <Image src={newsletter} alt="Newsletter" className="" />
         </div>
 
         <div>
@@ -47,7 +43,7 @@ export default function CTA() {
               type="email"
               placeholder="Enter your email"
               {...register("email", { required: true })}
-              className="w-full px-4 py-2 border focus:outline-none "
+              className="w-full px-4 py-2 border border-gray-400 focus:outline-none "
             />
             <button
               type="submit"

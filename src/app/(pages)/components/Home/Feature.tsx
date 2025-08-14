@@ -28,7 +28,7 @@ export default function Feature() {
   ];
 
   return (
-    <div>
+    <div className="my-10">
       <div className="text-center">
         <h2 className="capitalize text-4xl font-semibold leading-10 ">
           seamless learning, <br /> anywhere, anytime
@@ -39,7 +39,7 @@ export default function Feature() {
           schedule.
         </p>
       </div>
-      <div className="grid md:grid-cols-2 gap-5 my-10 items-stretch">
+      <div className="grid md:grid-cols-2 gap-5 mt-10 items-stretch">
         <div className="hidden md:block">
           <Image
             className="w-full h-full object-cover rounded-2xl"

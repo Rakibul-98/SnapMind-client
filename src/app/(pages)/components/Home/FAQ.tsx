@@ -36,7 +36,7 @@ export default function FAQ() {
 
   return (
     <section className="py-10">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center ">
         <div>
           <h2 className="text-3xl font-semibold mb-4 w-fit">
             Frequently Asked Questions

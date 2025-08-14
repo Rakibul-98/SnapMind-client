@@ -39,7 +39,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="pt-12">
+    <footer>
       <div className="w-[90%] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           <div className="col-span-3 space-y-4">
