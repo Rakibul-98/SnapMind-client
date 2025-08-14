@@ -10,7 +10,7 @@ interface DashboardMenuProps {
 export default function DashboardMenu({ handleLogout }: DashboardMenuProps) {
   return (
     <div>
-      <Link href="/" className="flex items-center pt-3">
+      <Link href="/" className="flex items-center">
         <Image className="h-10 w-10" src={logo} alt="logo" />
         <span className="ml-2 text-3xl font-bold">
           <span className="text-purple-700">Snap</span>
