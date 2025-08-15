@@ -28,3 +28,14 @@ export interface RegisterData {
 }
 
 export type RegisterResponse = ApiResponse<RegisterData>;
+
+export interface Course {
+  _id: string;
+  user: string;
+  title: string;
+  outline: string[];
+  isCompleted: boolean;
+  createdAt: string;
+  updatedAt: string;
+  __v: number;
+}

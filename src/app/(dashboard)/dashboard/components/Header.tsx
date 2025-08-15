@@ -1,4 +1,4 @@
-import headerBg from "../../../assets/courseImg.jpg";
+import headerBg from "../../../../assets/courseImg.jpg";
 import CourseCreate from "./CourseCreate";
 
 export default function Header() {

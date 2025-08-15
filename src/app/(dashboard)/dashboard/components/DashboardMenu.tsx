@@ -1,13 +1,19 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import logo from "../../../assets/logo.png";
+import logo from "../../../../assets/logo.png";
+import { useRouter } from "next/navigation";
+import { useAppDispatch } from "../../../../redux/hooks";
+import { logout } from "../../../../redux/features/auth/authSlice";
 
-interface DashboardMenuProps {
-  handleLogout: () => void; // function that returns nothing
-}
+export default function DashboardMenu() {
+  const dispatch = useAppDispatch();
+  const router = useRouter();
 
-export default function DashboardMenu({ handleLogout }: DashboardMenuProps) {
+  const handleLogout = () => {
+    dispatch(logout());
+    router.push("/login");
+  };
   return (
     <div>
       <Link href="/" className="flex items-center">

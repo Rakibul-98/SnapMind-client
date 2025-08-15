@@ -1,7 +1,12 @@
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
+import { Course } from "../../../../types";
 
-export default function CourseCard({ course }) {
+interface CourseCardProps {
+  course: Course;
+}
+
+export default function CourseCard({ course }: CourseCardProps) {
   console.log(course);
   const { title } = course;
   return (

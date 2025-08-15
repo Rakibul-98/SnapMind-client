@@ -1,8 +1,13 @@
-import React from "react";
-import Dashboard from "./Dashboard";
-import ProtectedRoute from "../../protectedRoute/ProtectedRoute";
+"use client";
 
-export default function DashboardPage() {
+import DashboardMenu from "./dashboard/components/DashboardMenu";
+import Profile from "./dashboard/components/Profile";
+
+export default function DashboardLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <div className="min-h-screen w-full bg-[#0a0a0a] relative">
       <div
@@ -16,9 +21,11 @@ export default function DashboardPage() {
       `,
         }}
       />
-      <ProtectedRoute>
-        <Dashboard />
-      </ProtectedRoute>
+      <div className="text-white relative grid grid-cols-1 md:grid-cols-[1fr_4fr_1fr] gap-6">
+        <DashboardMenu />
+        <div className="">{children}</div>
+        <Profile />
+      </div>
     </div>
   );
 }
